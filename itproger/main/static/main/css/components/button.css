@@ -1,0 +1,14 @@
+.btn {
+	display: inline-block;
+	line-height: 1;
+	font-weight: 700;
+	width: 100%;
+	border: none;
+	padding: 17px;
+
+}
+
+.btn-accent {
+	background-color: #D4C17F;
+	color: #fff;
+}

@@ -1,0 +1,18 @@
+{% extends "main/layout.html" %}
+
+{% block tittle %}Забронировать номер{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Забронировать номер</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.date }}<br>
+            {{ form.departure }}<br>
+            {{ form.full_text }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Забронировать</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,212 @@
+.brand {
+	position: relative;
+	z-index: 10;
+}
+
+.brand__main {
+	width: 134px;
+}
+
+.facts {
+	width: 794px;
+	max-width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-flow: row nowrap;
+	margin: auto;
+}
+
+.facts__item {
+	width: 100%;
+	text-align: center;
+}
+
+.facts__item-icon:before {
+	font-size: 80px;
+	color: #D4C17F;
+}
+
+.facts__item-title {
+	padding-top: 53px;
+}
+
+
+.room {
+	position: relative;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.room__title {
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	right: 50px;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+
+.room__price {
+	position: relative;
+	left: 160px;
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 69px;
+
+}
+
+
+.room__descr {
+	width: 450px;
+	height: 299px;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+
+.room__back {
+	text-decoration: none;
+	font-family: 'Playfair Display';	
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 19px;
+	color: #FFFFFF;
+	
+}
+
+.form {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.form__item {
+	width: calc(50% - 15px);
+	margin-bottom: 35px;
+}
+
+.form-control {
+	width: 100%;
+	border: none;
+	background-color: rgba(255, 255, 255, .2);
+	padding: 13px;
+	color: #fff;
+}
+
+.form-control:focus {
+	outline: none;
+	background-color: rgba(255, 255, 255, .24);
+}
+
+.form-control::placeholder {
+	color: #BEBEBE;
+}
+
+.video {
+	position: relative;
+}
+
+
+.video:after {
+	content: '';
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url('../../img/icons/play-button.svg');
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.map {
+	background-color: #626262;
+	height: 358px;
+}
+
+@media (max-width: 992px) {
+	.form {
+		justify-content: center;
+	}
+
+	.form__item {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.facts {
+		flex-flow: row wrap;
+	}
+
+	.facts__item {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+
+	.facts__item-title {
+		padding-top: 20px;
+	}
+
+	.room {
+		max-width: 400px;
+		margin: 0 auto 15px auto;
+	}
+}
+
+@media (max-width: 576px) {
+	.facts__item-icon:before {
+		font-size: 60px;
+	}
+
+	.room {
+		max-width: 320px;
+	}
+
+	.room__title {
+		font-size: 18px;
+		left: 30px;
+		bottom: 26px;
+	}
+
+	.form {
+		max-width: 255px;
+		margin: auto;
+	}
+
+	.room__price {
+		font-size: 18px;
+		left: 10px;
+
+	}
+
+	.room__descr {
+		max-width: 320px;
+		margin-bottom: 50px;
+		font-size: 12px;
+	}
+
+	.video,
+	.map,
+	.form-control,
+	#faq .btn,
+	#faq span {
+		max-width: 281px;
+		margin: auto;
+	}
+
+	.video:after {
+		background-size: 50px;
+		height: 50px;
+		width: 50%;
+	}
+}

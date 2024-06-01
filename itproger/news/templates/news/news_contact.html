@@ -1,0 +1,29 @@
+{% extends "main/layout.html" %} {% load static %} {% block tittle %}Контакты{% endblock %} {% block content %}
+<div class="features">
+    <h1 class="contacts">Контакты</h1>
+
+    <section id="our_rooms" class="section pb-0 pt-0">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <a href="#" class="link_unstyled">
+                        <div class="room">
+                            <img src="{% static 'main/img/map 1.jpg' %}" alt="" class="room__photo">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <ul class="contacts">
+                        <li>Адрес: Наб. реки Фонтанки 10-15</li>
+                        <li>Телефон: 8 (812) 123-45-67</li>
+                        <li>График работы: 10:00 - 20:00</li>
+                        <li>E-mail: <a href="mailto:vip@royalpalace.ru">vip@royalpalace.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}

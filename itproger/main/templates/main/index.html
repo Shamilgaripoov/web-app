@@ -1,0 +1,45 @@
+{% extends "main/layout.html" %} {% load static %} {% block tittle %}{{ title }}{% endblock %} {% block content %}
+<div class="features">
+    <h1>{{ title }}</h1>
+
+    <img src="{% static 'main/img/slider1.jpg' %}" alt="">
+
+
+<div class="content-grids">
+    <div class="wrap">
+        <div class="content-grid">
+            <div class="content-grid-pic">
+                <a href="#"><img src="{% static 'main/img/icon1.png' %}" title="image-name" /></a>
+            </div>
+            <div class="content-grid-info">
+                <h3 style="font-size:16px">Продукты высшего качества</h3>
+                <p>"Отборные фрукты и овощи,<br> Натуральные продукты без консервантов,<br> Свежие мясные блюда и домашние выпечки,<br> Высококачественные ингредиенты для лучшего вкуса. . ."</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="clear"> </div>
+        </div>
+        <div class="content-grid">
+            <div class="content-grid-pic">
+                <a href="#"><img src="{% static 'main/img/icon2.png' %}" title="image-name" /></a>
+            </div>
+            <div class="content-grid-info">
+                <h3 style="font-size:16px">Профессиональная поддержка клиентов</h3>
+                <p>"Мы всегда на связи,<br> Готовы помочь и выслушать каждого клиента"</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="clear"> </div>
+        </div>
+        <div class="content-grid">
+            <div class="content-grid-pic">
+                <a href="#"><img src="{% static 'main/img/iocn3.png' %}" title="image-name" /></a>
+            </div>
+            <div class="content-grid-info">
+                <h3 style="font-size:16px">Удобные и комфортные услуги</h3>
+                <p>"Роскошные номера с удобствами,<br> Разнообразные сервисы для вашего комфорта,<br> Все, чтобы сделать ваше пребывание незабываемым"</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="clear"> </div>
+        </div>
+
+        </div>
+        {% endblock %}
